@@ -1,0 +1,28 @@
+Client (Postman / Frontend)
+        │
+        ▼
+FastAPI Application
+(main.py)
+        │
+        ▼
+Routes / Endpoints
+(api/routes/)
+        │
+        ▼
+Schemas (Pydantic validation)
+(schemas/)
+        │
+        ▼
+Business Logic
+(services/)
+        │
+        ▼
+Database Models
+(models/)
+        │
+        ▼
+SQLAlchemy Session
+(db/session.py)
+        │
+        ▼
+PostgreSQL Database
