@@ -15,7 +15,7 @@ A RESTful API for tracking gym workouts and exercises, built with FastAPI and Po
 
 - User registration and login with JWT authentication
 - CRUD operations for exercises
-- CRUD operations fro workouts
+- CRUD operations for workouts
 - Adding exercises to workouts with sets, reps, and weight tracking
 - Automatic API documentation (Swagger UI)
 
