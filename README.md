@@ -29,7 +29,7 @@ A RESTful API for tracking gym workouts and exercises, built with FastAPI and Po
 
 1. Clone the repository:
 ``` bash
-git clone https://github.com/TwojUsername/gym-tracker-api
+git clone https://github.com/Username/gym-tracker-api
 cd gym_tracker_api
 ```
 
