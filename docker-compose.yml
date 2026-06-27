@@ -2,7 +2,7 @@ services:
   api:
     build: .
     container_name: gym_tracker_api
-
+    
     ports:
       - "8000:8000"
 
@@ -17,6 +17,7 @@ services:
   db:
     image: postgres:16
     container_name: gym_tracker_db
+    restart: always
 
     environment:
       POSTGRES_USER: postgres
