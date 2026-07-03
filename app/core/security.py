@@ -12,14 +12,12 @@ pwd_context = CryptContext(
     deprecated="auto"
 )
 
-#Password hashing
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
 
 def verify_password(password: str, hashed: str) -> bool:
     return pwd_context.verify(password, hashed)
 
-#JWT token handling
 def create_access_token(data: dict, expires_delta: timedelta | None = None) -> str:
     to_encode = data.copy()
 
