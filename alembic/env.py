@@ -6,15 +6,13 @@ from alembic import context
 
 from app.core.database import Base
 
-# Import all models
 from app.models.user import User
 from app.models.exercise import Exercise
 from app.models.workout import Workout  
-from models.workout_exercises import WorkoutExercise 
+from app.models.workout_exercises import WorkoutExercise 
 
 config = context.config
 
-# DATABASE_URL from .env
 database_url = os.getenv("DATABASE_URL")
 
 config.set_main_option(
@@ -22,11 +20,9 @@ config.set_main_option(
     database_url
 )
 
-# logging
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# metadata models
 target_metadata = Base.metadata
 
 
